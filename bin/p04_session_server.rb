@@ -9,7 +9,7 @@ require_relative '../lib/phase4/controller_base'
 class MyController < Phase4::ControllerBase
   def go
     session["count"] ||= 0
-    session["count"] += 1
+    session["count"] += 2
     render :counting_show
   end
 end
